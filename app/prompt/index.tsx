@@ -1,4 +1,4 @@
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { StyleSheet, TouchableOpacity, View } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import { useState } from "react";
 import { LogoStyles } from "@/components/logo-styles/logo-styles";
@@ -8,6 +8,7 @@ import { Chip } from "@/components/chip/chip";
 import { addDoc, collection, onSnapshot } from "firebase/firestore";
 import { db } from "@/config/firebase";
 import { colors } from "@/constants/color";
+import { Text } from "@/components/text/text";
 
 const randomTextList = [
   "An elegant logo for Aria Consulting Group, with gold and black as the main colors",
@@ -88,7 +89,7 @@ export default function Prompt() {
 
         <View style={{ paddingTop: 24 }}></View>
 
-        <LogoStyles logoStyle={logoStyle} setLogoStyle={setLogoStyle} />
+        <LogoStyles setLogoStyle={setLogoStyle} />
 
         <View style={{ flex: 1 }}></View>
 

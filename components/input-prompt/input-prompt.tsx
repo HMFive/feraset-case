@@ -1,6 +1,7 @@
-import { StyleSheet, Text, TextInput, View } from "react-native";
+import { StyleSheet, TextInput, View } from "react-native";
 import { Dispatch, SetStateAction, useState } from "react";
 import { colors } from "@/constants/color";
+import { Text } from "@/components/text/text";
 
 interface InputPromptProps {
   prompt: string;

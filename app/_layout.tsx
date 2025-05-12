@@ -2,10 +2,6 @@ import { Stack } from "expo-router";
 import { LinearGradient } from "expo-linear-gradient";
 import { colors } from "@/constants/color";
 
-export const unstable_settings = {
-  initialRouteName: "index",
-};
-
 export default function RootLayout() {
   return (
     <Stack

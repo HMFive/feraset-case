@@ -1,9 +1,10 @@
 import { LinearGradient } from "expo-linear-gradient";
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { StyleSheet, TouchableOpacity, View } from "react-native";
 import { router, useLocalSearchParams } from "expo-router";
 import { Image } from "expo-image";
 import * as Clipboard from "expo-clipboard";
 import { colors } from "@/constants/color";
+import { Text } from "@/components/text/text";
 
 export default function Output() {
   const { prompt, logoStyle } = useLocalSearchParams();

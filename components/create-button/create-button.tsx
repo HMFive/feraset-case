@@ -1,7 +1,8 @@
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { StyleSheet, TouchableOpacity, View } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import { Image } from "expo-image";
 import { colors } from "@/constants/color";
+import { Text } from "@/components/text/text";
 
 interface CreateButtonProps {
   onPress(): void;

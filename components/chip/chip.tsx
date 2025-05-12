@@ -1,7 +1,6 @@
 import {
   StyleSheet,
   View,
-  Text,
   TouchableOpacity,
   ActivityIndicator,
 } from "react-native";
@@ -9,6 +8,7 @@ import { router } from "expo-router";
 import { Image } from "expo-image";
 import { LinearGradient } from "expo-linear-gradient";
 import { colors } from "@/constants/color";
+import { Text } from "@/components/text/text";
 
 interface ChipProps {
   state: string;
