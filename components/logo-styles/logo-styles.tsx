@@ -24,11 +24,10 @@ const logos = [
 ];
 
 interface LogoStylesProps {
-  logoStyle: string;
   setLogoStyle: Dispatch<SetStateAction<string>>;
 }
 
-export const LogoStyles = ({ logoStyle, setLogoStyle }: LogoStylesProps) => {
+export const LogoStyles = ({ setLogoStyle }: LogoStylesProps) => {
   const [isClicked, setIsClicked] = useState<number>(0);
   return (
     <View>
