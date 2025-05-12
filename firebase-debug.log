@@ -1,0 +1,135 @@
+[debug] [2025-05-12T07:48:13.455Z] ----------------------------------------------------------------------
+[debug] [2025-05-12T07:48:13.456Z] Command:       /Users/yusufciftci/.nvm/versions/node/v20.18.0/bin/node /Users/yusufciftci/.nvm/versions/node/v20.18.0/bin/firebase emulators:start
+[debug] [2025-05-12T07:48:13.456Z] CLI Version:   13.30.0
+[debug] [2025-05-12T07:48:13.456Z] Platform:      darwin
+[debug] [2025-05-12T07:48:13.456Z] Node Version:  v20.18.0
+[debug] [2025-05-12T07:48:13.457Z] Time:          Mon May 12 2025 10:48:13 GMT+0300 (GMT+03:00)
+[debug] [2025-05-12T07:48:13.457Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-05-12T07:48:13.539Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-12T07:48:13.539Z] > authorizing via signed-in user (yusufciftci.55@gmail.com)
+[debug] [2025-05-12T07:48:13.593Z] openjdk version "17.0.11" 2024-04-16 LTS
+
+[debug] [2025-05-12T07:48:13.593Z] OpenJDK Runtime Environment Zulu17.50+19-CA (build 17.0.11+9-LTS)
+OpenJDK 64-Bit Server VM Zulu17.50+19-CA (build 17.0.11+9-LTS, mixed mode, sharing)
+
+[debug] [2025-05-12T07:48:13.595Z] Parsed Java major version: 17
+[info] i  emulators: Starting emulators: functions, firestore, extensions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, firestore, extensions"}}
+[debug] [2025-05-12T07:48:13.597Z] Checked if tokens are valid: true, expires at: 1747037040236
+[debug] [2025-05-12T07:48:13.597Z] Checked if tokens are valid: true, expires at: 1747037040236
+[debug] [2025-05-12T07:48:13.597Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/feraset-defc8 [none]
+[debug] [2025-05-12T07:48:14.602Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/feraset-defc8 200
+[debug] [2025-05-12T07:48:14.603Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/feraset-defc8 {"projectNumber":"772959000216","projectId":"feraset-defc8","lifecycleState":"ACTIVE","name":"feraset","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-05-11T18:56:09.643639Z"}
+[debug] [2025-05-12T07:48:15.163Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-05-12T07:48:15.163Z] [firestore] Firestore Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-05-12T07:48:15.163Z] [firestore.websocket] websocket server for firestore only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-05-12T07:48:15.164Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2025-05-12T07:48:15.170Z] [hub] writing locator at /var/folders/nc/rfkjvfds5zg33g8nnhtllm3c0000gn/T/hub-feraset-defc8.json
+[debug] [2025-05-12T07:48:15.173Z] [Extensions] Started Extensions emulator, this is a noop.
+[debug] [2025-05-12T07:48:15.584Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-05-12T07:48:15.584Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-05-12T07:48:15.584Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-05-12T07:48:15.584Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: apphosting, auth, database, hosting, pubsub, storage, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mapphosting, auth, database, hosting, pubsub, storage, dataconnect\u001b[22m"}}
+[debug] [2025-05-12T07:48:15.587Z] defaultcredentials: writing to file /Users/yusufciftci/.config/firebase/yusufciftci_55_gmail.com_application_default_credentials.json
+[debug] [2025-05-12T07:48:15.591Z] Setting GAC to /Users/yusufciftci/.config/firebase/yusufciftci_55_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/yusufciftci/.config/firebase/yusufciftci_55_gmail.com_application_default_credentials.json"}}
+[debug] [2025-05-12T07:48:15.591Z] Checked if tokens are valid: true, expires at: 1747037040236
+[debug] [2025-05-12T07:48:15.591Z] Checked if tokens are valid: true, expires at: 1747037040236
+[debug] [2025-05-12T07:48:15.591Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/feraset-defc8/adminSdkConfig [none]
+[debug] [2025-05-12T07:48:16.079Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/feraset-defc8/adminSdkConfig 200
+[debug] [2025-05-12T07:48:16.079Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/feraset-defc8/adminSdkConfig {"projectId":"feraset-defc8","storageBucket":"feraset-defc8.firebasestorage.app"}
+[debug] [2025-05-12T07:48:16.106Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2025-05-12T07:48:16.106Z] Ignoring unsupported arg: single_project_mode_error {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: single_project_mode_error"}}
+[debug] [2025-05-12T07:48:16.106Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","/Users/yusufciftci/.cache/firebase/emulators/cloud-firestore-emulator-v1.19.8.jar","--host","127.0.0.1","--port",8080,"--websocket_port",9150,"--project_id","feraset-defc8","--rules","/Users/yusufciftci/Projects/feraset-case/firestore.rules","--single_project_mode",true,"--functions_emulator","127.0.0.1:5001"],"optionalArgs":["port","webchannel_port","host","rules","websocket_port","functions_emulator","seed_from_export","project_id","single_project_mode"],"joinArgs":false,"shell":false,"port":8080} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"/Users/yusufciftci/.cache/firebase/emulators/cloud-firestore-emulator-v1.19.8.jar\",\"--host\",\"127.0.0.1\",\"--port\",8080,\"--websocket_port\",9150,\"--project_id\",\"feraset-defc8\",\"--rules\",\"/Users/yusufciftci/Projects/feraset-case/firestore.rules\",\"--single_project_mode\",true,\"--functions_emulator\",\"127.0.0.1:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"websocket_port\",\"functions_emulator\",\"seed_from_export\",\"project_id\",\"single_project_mode\"],\"joinArgs\":false,\"shell\":false,\"port\":8080}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[debug] [2025-05-12T07:48:16.692Z] May 12, 2025 10:48:16 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
+INFO: Started WebSocket server on ws://127.0.0.1:9150
+ {"metadata":{"emulator":{"name":"firestore"},"message":"May 12, 2025 10:48:16 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start\nINFO: Started WebSocket server on ws://127.0.0.1:9150\n"}}
+[debug] [2025-05-12T07:48:16.702Z] API endpoint: http:// {"metadata":{"emulator":{"name":"firestore"},"message":"API endpoint: http://"}}
+[debug] [2025-05-12T07:48:16.702Z] 127.0.0.1:8080
+If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
+
+   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080
+
+If you are running a Firestore in Datastore Mode project, run:
+
+   export DATASTORE_EMULATOR_HOST=127.0.0.1:8080
+
+Note: Support for Datastore Mode is in preview. If you encounter any bugs please file at https://github.com/firebase/firebase-tools/issues.
+Dev App Server is now running.
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"127.0.0.1:8080\nIf you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:\n\n   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080\n\nIf you are running a Firestore in Datastore Mode project, run:\n\n   export DATASTORE_EMULATOR_HOST=127.0.0.1:8080\n\nNote: Support for Datastore Mode is in preview. If you encounter any bugs please file at https://github.com/firebase/firebase-tools/issues.\nDev App Server is now running.\n\n"}}
+[info] ✔  firestore: Firestore Emulator UI websocket is running on 9150. {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator UI websocket is running on 9150."}}
+[debug] [2025-05-12T07:48:16.717Z] [Extensions] Connecting Extensions emulator, this is a noop.
+[info] i  functions: Watching "/Users/yusufciftci/Projects/feraset-case/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/yusufciftci/Projects/feraset-case/functions\" for Cloud Functions..."}}
+[debug] [2025-05-12T07:48:16.720Z] Validating nodejs source
+[debug] [2025-05-12T07:48:17.194Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-05-12T07:48:17.194Z] Building nodejs source
+[debug] [2025-05-12T07:48:17.194Z] Failed to find version of module node: reached end of search path /Users/yusufciftci/Projects/feraset-case/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "22" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2025-05-12T07:48:17.195Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-05-12T07:48:17.198Z] Found firebase-functions binary at '/Users/yusufciftci/Projects/feraset-case/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8005
+
+[debug] [2025-05-12T07:48:17.379Z] Got response from /__/functions.yaml {"endpoints":{"onPromptCreated":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"eventTrigger":{"eventType":"google.cloud.firestore.document.v1.created","eventFilters":{"database":"(default)","namespace":"(default)"},"eventFilterPathPatterns":{"document":"prompts/{docId}"},"retry":false},"entryPoint":"onPromptCreated"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[debug] [2025-05-12T07:48:21.405Z] defaultcredentials: writing to file /Users/yusufciftci/.config/firebase/yusufciftci_55_gmail.com_application_default_credentials.json
+[debug] [2025-05-12T07:48:21.407Z] Setting GAC to /Users/yusufciftci/.config/firebase/yusufciftci_55_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/yusufciftci/.config/firebase/yusufciftci_55_gmail.com_application_default_credentials.json"}}
+[info] ✔  functions: Loaded functions definitions from source: onPromptCreated. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: onPromptCreated."}}
+[debug] [2025-05-12T07:48:21.412Z] Found a v2 firestore trigger.
+[debug] [2025-05-12T07:48:21.413Z] addFirestoreTrigger "{\"eventType\":\"google.cloud.firestore.document.v1.created\",\"database\":\"(default)\",\"namespace\":\"(default)\",\"document\":{\"value\":\"prompts/{docId}\",\"matchType\":\"PATH_PATTERN\"}}"
+[debug] [2025-05-12T07:48:21.413Z] >>> [apiv2][query] POST http://127.0.0.1:8080/emulator/v1/projects/feraset-defc8/eventarcTrigger?eventarcTriggerId=us-central1-onPromptCreated-0 [none]
+[debug] [2025-05-12T07:48:21.413Z] >>> [apiv2][body] POST http://127.0.0.1:8080/emulator/v1/projects/feraset-defc8/eventarcTrigger?eventarcTriggerId=us-central1-onPromptCreated-0 "{\"eventType\":\"google.cloud.firestore.document.v1.created\",\"database\":\"(default)\",\"namespace\":\"(default)\",\"document\":{\"value\":\"prompts/{docId}\",\"matchType\":\"PATH_PATTERN\"}}"
+[debug] [2025-05-12T07:48:21.423Z] May 12, 2025 10:48:21 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"May 12, 2025 10:48:21 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2025-05-12T07:48:21.508Z] May 12, 2025 10:48:21 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"May 12, 2025 10:48:21 AM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected HTTP/2 connection.\n"}}
+[debug] [2025-05-12T07:48:21.756Z] <<< [apiv2][status] POST http://127.0.0.1:8080/emulator/v1/projects/feraset-defc8/eventarcTrigger?eventarcTriggerId=us-central1-onPromptCreated-0 200
+[debug] [2025-05-12T07:48:21.756Z] <<< [apiv2][body] POST http://127.0.0.1:8080/emulator/v1/projects/feraset-defc8/eventarcTrigger?eventarcTriggerId=us-central1-onPromptCreated-0 {"eventType":"google.cloud.firestore.document.v1.created","database":"(default)","namespace":"(default)","document":{"value":"prompts/{docId}","matchType":"PATH_PATTERN"}}
+[info] ✔  functions[us-central1-onPromptCreated]: firestore function initialized. {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mfirestore\u001b[22m function initialized."}}
+[debug] [2025-05-12T07:48:21.758Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────┬────────────────┬──────────────────────────────────┐
+│ Emulator   │ Host:Port      │ View in Emulator UI              │
+├────────────┼────────────────┼──────────────────────────────────┤
+│ Functions  │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions  │
+├────────────┼────────────────┼──────────────────────────────────┤
+│ Firestore  │ 127.0.0.1:8080 │ http://127.0.0.1:4000/firestore  │
+├────────────┼────────────────┼──────────────────────────────────┤
+│ Extensions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/extensions │
+└────────────┴────────────────┴──────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500, 9150
+┌─────────────────────────┬───────────────┬─────────────────────┐
+│ Extension Instance Name │ Extension Ref │ View in Emulator UI │
+└─────────────────────────┴───────────────┴─────────────────────┘
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
