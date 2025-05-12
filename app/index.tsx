@@ -1,15 +1,11 @@
-import { Text, View } from "react-native";
+import { Redirect } from "expo-router";
+import { useFonts } from "expo-font";
 
-export default function Index() {
-  return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
-    </View>
-  );
-}
+const Index = () => {
+  useFonts({
+    Manrope: require("../assets/fonts/Manrope-VariableFont_wght.ttf"),
+  });
+  return <Redirect href="/prompt" />;
+};
+
+export default Index;
